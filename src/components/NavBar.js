@@ -27,7 +27,7 @@ export default function NavBar({className,navItems,isCol = false,setMenuToggle =
   }
 
   return (
-      <nav className={cn("items-center",className)}>
+      <nav className={cn(className)}>
         <ul className={`flex gap-6 items-center ${isCol && "flex-col"}`}>
           {navItems.map((navItem) => (
             <li
