@@ -12,7 +12,7 @@ export default function NavBar({className,navItems,isCol = false,setMenuToggle =
   const location = useLocation();
   const navigate = useNavigate();
   const [selectedNavItem, setSelectedNavItem] = useState(
-    navItems[0].id || null
+     null
   );
 
   useEffect(()=> {
@@ -32,7 +32,7 @@ export default function NavBar({className,navItems,isCol = false,setMenuToggle =
           {navItems.map((navItem) => (
             <li
               key={navItem.id}
-              className={`cursor-pointer text-2xl sm:text-xl md:text-2xl font-poppins font-semibold  transition-colors duration-300 ease-in-out
+              className={`cursor-pointer text-2xl sm:text-xl md:text-2xl font-poppins font-semibold  transition-colors duration-200 ease-in-out
                 ${
                   selectedNavItem === navItem.id
                     ? "text-white"
