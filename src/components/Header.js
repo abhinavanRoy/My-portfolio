@@ -14,17 +14,14 @@ import { HiDownload } from "react-icons/hi";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
-function Header() {
+export default function Header() {
   const [isMenuToggle, setMenuToggle] = useState(false);
   const { downloadResume, isResumeDownloading } = useDownloadResume();
 
   return (
     <>
-      <div className="flex p-7 w-full justify-end sm:items-center ">
-        <NavBar
-          navItems={CONSTANTS.navItems}
-          className={"hidden sm:flex sm:mx-auto"}
-        />
+      <div className="flex p-7 w-full justify-between ">
+        <NavBar navItems={CONSTANTS.navItems} className={"hidden sm:flex "} />
 
         <Button
           className={"hidden sm:flex sm:text-md md:text-lg"}
@@ -56,8 +53,8 @@ function Header() {
           )}
         </div>
       </div>
-      <div className=" flex flex-col w-full gap-5 absolute sm:hidden items-center bg-black top-20">
-        {isMenuToggle && (
+      {isMenuToggle && (
+        <div className=" flex z-10 h-full flex-col w-full gap-5 absolute sm:hidden items-center bg-black top-20">
           <>
             <NavBar
               navItems={CONSTANTS.navItems}
@@ -77,9 +74,8 @@ function Header() {
               icon={!isResumeDownloading && <HiDownload />}
             />
           </>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 }
-export default Header;

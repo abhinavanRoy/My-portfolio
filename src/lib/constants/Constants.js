@@ -26,6 +26,11 @@ const CONSTANTS = {
       },
     ],
     resume: "Resume",
-    downloading: "Downloading..."
+    downloading: "Downloading...",
+    abhinavanRoy: "Abhinavan Roy",
+    shortDetail: "A software engineer crafting seamless user experiences with creativity and precision.",
+    copyright: "Copyright",
+    currentyear: 2024,
+    allRightsReserved: "All rights reserved"
 };
 export default CONSTANTS;
