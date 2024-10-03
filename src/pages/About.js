@@ -15,7 +15,7 @@ export default function About() {
         />
 
         <div className="  flex px-2 flex-col   gap-5  w-full md:pr-40 ">
-          <p className="text-white text-justify text-lg md:text-xl  font-poppins font-light text-wrap">
+          <p className="text-white text-justify text-lg md:text-xl w-full font-poppins font-light text-wrap">
             {CONSTANTS.myDescription}
           </p>
           <Skills />

@@ -63,7 +63,37 @@ const CONSTANTS = {
       skillGroupItems: ["Git", "REST", "Figma"],
     },
   ],
+  loveToHear: "I would love to hear from you! 😄 ",
+  leaveMessage: "Leave a message below, and I'll get back tou you as soon as possible",
+  connectWithMe: "Connect with me",
+  profileLinks: [ {
+      linkedIn: {
+        head: "https://www.",
+        body: "linkedin.com/",
+        tail: "in/abhinavanRoy"
+      }
+    },
+      {
+        twitter: {
+          head: "https://x",
+          body: ".com/",
+          tail: "AbhinavanR"
+        },
+      },
+      {
+        gitHub: {
+          head: "https://github",
+          body: ".com/",
+          tail: "abhinavanRoy"
+        }
+      }
+
+    
+
+  ],
+  
 
   profilePic: "Profile pic",
+  send:"Send"
 };
 export default CONSTANTS;
