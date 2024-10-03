@@ -3,9 +3,9 @@ import { cn } from "../lib/utils";
 
 export default function Button({
   onClick,
-  isDisabled,
+  isDisabled = false,
   btnName,
-  icon,
+  icon = null,
   className,
 }) {
   return (

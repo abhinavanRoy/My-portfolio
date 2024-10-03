@@ -12,10 +12,10 @@ export default function Skills() {
       </h1>
       {skillList.map((skillGroup) => (
         <>
-          <h1 className="text-white font-poppins font-light pl-4 opacity-90  text-lg">
+          <h1 key={skillGroup.skillGroupId} className="text-white font-poppins font-light pl-4 opacity-90  text-lg">
             {skillGroup.skillGroupName}
           </h1>
-          <div className="flex flex-wrap gap-2 pl-4 py-1">
+          <div  className="flex flex-wrap gap-2 pl-4 py-1">
             {skillGroup.skillGroupItems.map((skill) => (
               <>
                 <Chip chipTitle={skill} />
